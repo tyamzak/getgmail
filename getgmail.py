@@ -11,7 +11,7 @@ class GmailAPI:
         # If modifying these scopes, delete the file token.json.
         self._SCOPES = 'https://www.googleapis.com/auth/gmail.readonly'
         # 認証情報ファイルを定義
-        self.credentialPath = "client_secret_379796874485-ftuhgauo2nt1ob5ff9badcjl3r2fg7ju.apps.googleusercontent.com.json"
+        self.credentialPath = ""
 
     def ConnectGmail(self):
         store = file.Storage('token.json')
@@ -158,8 +158,8 @@ if __name__ == '__main__':
     print('1')
     # パラメータは、任意の値を指定する
     messages = test.GetMessageList(
-        DateFrom='2022-05-18',
-        DateTo='2022-05-21',
+        DateFrom='2022-05-19',
+        DateTo='2022-05-24',
         labelname='plazaans'
     )
 
